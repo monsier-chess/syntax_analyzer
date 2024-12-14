@@ -36,15 +36,12 @@ def error():
 
 
 def vyrazhenie():
-    if ch in {'s', 't'}:
-        oboznachenie_funkcii()
-        if ch == '(':
-            readch()
-        else:
-            error()
-        ostavshayasya_chast()
-        return
-    error()
+    oboznachenie_funkcii()
+    if ch == '(':
+        readch()
+    else:
+        error()
+    ostavshayasya_chast()
 
 
 def oboznachenie_funkcii():
@@ -64,22 +61,20 @@ def oboznachenie_funkcii():
 
 
 def ostavshayasya_chast():
-    if ch in {'1'}:
-        if ch == '1':
-            readch()
-        else:
-            error()
-        center()
-        if ch == '1':
-            readch()
-        else:
-            error()
-        if ch == '1':
-            readch()
-        else:
-            error()
-        return
-    error()
+    if ch == '1':
+        readch()
+    else:
+        error()
+    center()
+    if ch == '1':
+        readch()
+    else:
+        error()
+    if ch == '1':
+        readch()
+    else:
+        error()
+    return
 
 
 def center():
