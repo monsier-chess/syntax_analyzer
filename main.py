@@ -74,7 +74,6 @@ def ostavshayasya_chast():
         readch()
     else:
         error()
-    return
 
 
 def center():
